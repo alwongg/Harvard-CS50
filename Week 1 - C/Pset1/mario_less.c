@@ -19,7 +19,7 @@ int main(void)
     for (int row = 0; row < height; row++)
     {
         // print spaces for each column
-        for (int space = 0; space < height - 1; space++)
+        for (int space = 0; space < height - row - 1; space++)
         {
             printf(" ");
         }
