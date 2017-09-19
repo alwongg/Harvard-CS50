@@ -14,15 +14,7 @@ int main(void)
     // You will be given a float number that is in dollars, need to convert later to cents
     float amountGiven;
     // Given amount in dollars by user, convert it to cents
-    int centsAmount;
-    // Coin count for quarter, dime and nickel
-    int quarterCount;
-    int dimeCount;
-    int nickelCount;
-    // Keep track of the leftover amount until it reaches 0
-    int leftoverAmount;
-    // Final answer: the total amount of coins needed to return to customer using the lowest possible amount of coins
-    int coinsCount;
+    int centsAmount, leftoverAmount, quarterCount, dimeCount, nickelCount, coinsCount;
     // prompt user for an amount of change they owe
     do
     {
