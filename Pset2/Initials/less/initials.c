@@ -6,16 +6,14 @@
 int main(void)
 {
     string name = get_string("Name: ");
-    char initials[4];
-    int counter = 0;
-    for (int i = 0; i < strlen(name); i++)
+    printf("%c", toupper(name[0]));
+    for (int i = 0, n = strlen(name); i < n; i++)
     {
-        if (isupper(name[i]))
+        if (name[i] == ' ' && name[i+1] != '\0')
         {
-            initials[counter] = name[i];
-            counter++;
+            printf("%c", toupper(name[i+1]));
+            i++;
         }
     }
-    initials[counter] = '\0';
-    printf("%s\n", initials);
+    printf("\n");
 }
